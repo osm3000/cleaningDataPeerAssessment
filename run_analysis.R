@@ -59,11 +59,10 @@ getAggregatedData <- function(data){
     aggregated
 }
 
-writeTidyData <- function(tidy.file1, tidy.file2){
+writeTidyData <- function(tidy.file){
     data <- getTidyData()
-    write.table(data, file = tidy.file1, quote = FALSE)
     aggregated <- getAggregatedData(data)
-    write.table(aggregated, file = tidy.file2, quote = FALSE)
+    write.table(aggregated, file = tidy.file, quote = FALSE)
 }
 
-writeTidyData('tidy1.txt', 'tidy2.txt') 
+writeTidyData('tidy.txt') 
