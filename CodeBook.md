@@ -1,4 +1,4 @@
-## This table contains the column names of the tidy1.txt and tidy2.txt
+## This table contains the column names of the tidy.txt
 
 1. ActivityName
 2. SubjectID
