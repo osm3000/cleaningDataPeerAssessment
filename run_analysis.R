@@ -1,5 +1,3 @@
-# setwd('~/workspace/yil/DataSciences/cleaningDataPeerAssessment/UCI HAR Dataset/')
-
 # step 1-2: merges the training and the test datasets
 readData <- function(path.prefix, file) {
     # read features, labels, subject into R
