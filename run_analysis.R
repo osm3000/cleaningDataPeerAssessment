@@ -17,7 +17,7 @@ readData <- function(path.prefix, file) {
     # select columns measuring mean/std
     col.idx <- grep('mean\\(\\)|std\\(\\)', feature.names)
 
-    data <- cbind(subject, features[ ,col.idx], label)
+    data <- cbind(label, subject, features[ ,col.idx])
     names(data) <- c('Activity', 'SubjectID',feature.names[col.idx])
     data
 }
